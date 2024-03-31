@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tinder Web Effect | Harshit Jain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+</head>
+
+<style>
+  .detailsContainter {
+    background: linear-gradient(to bottom, transparent, black);
+  }
+</style>
+
+<body>
+  <div class="w-full h-screen bg-black font-['Gilroy']">
+    <div class="imageContainer w-full h-screen relative">
+      <div class="main z-[3] w-full h-screen absolute bg-orange-600">
+        <img class="w-full h-full object-cover" src="">
+      </div>
+      <div class="back z-[2] w-full h-screen absolute bg-green-600">
+        <img class="w-full h-full object-cover" src="">
+      </div>
+    </div>
+    <div class="w-full flex flex-col justify-between h-screen absolute top-0 left-0 z-[4]">
+      <div class="navbar flex items-center justify-between text-white p-5">
+        <div class="profileImg w-[3rem] h-[3rem] rounded-full overflow-hidden bg-red-600">
+          <img class="rounded-full w-full h-full object-cover" src="">
+        </div>
+        <h3 class="font-medium tracking-tighter text-lg">Tinder Clone</h3>
+        <div class="chat relative w-[3rem] h-[3rem] rounded-full bg-white/20 flex items-center justify-center text-xl">
+          <i class="opacity-80 ri-chat-3-fill"></i>
+          <div
+            class="badge absolute top-0 flex items-center justify-center right-0 translate-x-[3px] -translate-y-[5px] rounded-full bg-[#FC5149] w-5 h-5">
+            <h5 class="font-medium text-[12px]"></h5>
+          </div>
+        </div>
+      </div>
+      <div class="detailsContainter w-full">
+        <div class="details w-full p-5">
+          <div class="location flex gap-4 items-center">
+            <i
+              class="font-semibold flex items-center justify-center rounded-full bg-white w-[2rem] h-[2rem] ri-corner-right-up-line"></i>
+            <h3 class="text-white"></h3>
+          </div>
+          <div class="name flex text-white mt-1 gap-2">
+            <h1 class="text-4xl truncate tracking-tighter"></h1>
+            <h1 class="text-4xl truncate tracking-tighter opacity-80"></h1>
+          </div>
+          <div class="tags flex gap-2 text-white mt-3">
+            <div class="tag flex gap-2 items-center bg-white/30 px-3 py-1 rounded-full">
+              <i class="ri-music-2-fill"></i>
+              <h3 class="tracking-tighter text-sm">Music</h3>
+            </div>
+            <div class="tag flex gap-2 items-center bg-white/30 px-3 py-1 rounded-full">
+              <i class="ri-megaphone-fill"></i>
+              <h3 class="tracking-tighter text-sm">Speaker</h3>
+            </div>
+            <div class="tag flex gap-2 items-center bg-white/30 px-3 py-1 rounded-full">
+              <i class="ri-quill-pen-fill"></i>
+              <h3 class="tracking-tighter text-sm">Poetry</h3>
+            </div>
+          </div>
+          <div class="bio text-white/80 mt-5">
+            <h3 class="text-xl font-semibold">Bio</h3>
+            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nisi officia hic. Neque,
+              dolore explicabo.</p>
+          </div>
+          <div class="buttons flex gap-1 mt-5">
+            <button class="py-2 text-2xl rounded-lg w-1/2 bg-white"><i class="ri-close-line"></i></button>
+            <button class="py-2 text-2xl rounded-lg w-1/2 bg-[#FC5149]"><i class="ri-service-fill"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>
